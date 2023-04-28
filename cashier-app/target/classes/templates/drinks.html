@@ -1,0 +1,50 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<html>
+<head>
+    <title>STARBUCKS DRINKS</title>
+    <link rel="stylesheet" th:href="@{/styles.css}" />
+</head>
+<body>
+<h1 align="center">Drinks</h1>
+
+<p align="center"><img th:src="@{/images/starbuckslogo.jpg}" width="250" height="250"></p>
+
+<form name="form" method="GET" action="">
+    <p align="center">
+        <br/>
+        <br/>
+        <div class="item">
+            <a th:href="@{/drinks/caffelatte}">
+                <img style="border-radius: 50%" th:src="@{/images/caffelatte.jpg}" width="150" height="150">
+            </a>
+            <p class="caption">Caffe Latte</p>
+        </div>
+        <div class="item">
+            <a th:href="@{/drinks/caffeamericano}">
+                <img style="border-radius: 50%" th:src="@{images/caffeamericano.jpg}" width="150" height="150">
+            </a>
+            <p class="caption">Caffe Americano</p>
+        </div>
+        <div class="item">
+            <a th:href="@{/drinks/caffemocha}">
+                <img style="border-radius: 50%" th:src="@{images/caffemocha.jpg}" width="150" height="150">
+            </a>
+            <p class="caption">Caffe Mocha</p>
+        </div>
+        <div class="item">
+            <a th:href="@{/drinks/espresso}">
+                <img style="border-radius: 50%" th:src="@{images/espresso.jpg}" width="150" height="150">
+            </a>
+            <p class="caption">Espresso</p>
+        </div>
+        <div class="item">
+            <a th:href="@{/drinks/cappuccino}">
+                <img style="border-radius: 50%" th:src="@{images/cappuccino.jpg}" width="150" height="150">
+            </a>
+            <p class="caption">Cappuccino</p>
+        </div>
+    </p>
+</form>
+</body>

@@ -1,0 +1,58 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<html>
+<head>
+    <title>STARBUCKS CASH REGISTER</title>
+    <link rel="stylesheet" th:href="@{/styles.css}" />
+</head>
+
+<body>
+<h1 align="center">STARBUCKS CASH REGISTER</h1>
+
+<p align="center"><img th:src="@{/images/starbuckslogo.jpg}" width="250" height="250"></p>
+
+<!-- FORM SECTION -->
+<form method="GET" action="/drinks">
+    <p align="center">
+        <br/>
+        <br/>
+        <input type="submit" value="Get drinks">
+    </p>
+</form>
+
+<form name="form" th:object="${command}" method="post" action="">
+    <p align="center">
+        <br/>
+
+        <input type="submit" name="action" id="clear" value="CLEAR ORDER">
+        <br/>
+        <input type="hidden" name="drink" id="drink" value="None"></input>
+        <input type="hidden" name="milk" id="milk" value="None"></input>
+        <input type="hidden" name="size" id="size" value="size"></input>
+    </p>
+    <p>
+    <table id="msg" align="center" style="width:75%">
+        <tr>
+            <td>
+          <pre align="left" id="pre">
+          <span th:text="${message}"></span>
+          </pre>
+            </td>
+        </tr>
+    </table>
+    </p>
+    <br/>
+</form>
+<!-- END FORM SECTION -->
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+</body>
+</html>
